@@ -9,10 +9,12 @@ import { SignupComponent } from './signup/signup.component';
 import { LandingComponent } from './landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { HomeComponent } from './home/home.component';
+import { CardapioComponent } from './cardapio/cardapio.component';
 
 const routes: Routes = [
     { path : 'home', component : HomeComponent },
     { path: 'home_paper',       component: HomePaperComponent },
+    { path: 'cardapio' , component: CardapioComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },

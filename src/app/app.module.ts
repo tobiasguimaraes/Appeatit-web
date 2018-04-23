@@ -15,6 +15,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomePaperModule } from './home_paper/home_paper.module';
 import { HomeComponent } from './home/home.component';
+import { CardapioComponent } from './cardapio/cardapio.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './home/home.component';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    CardapioComponent
   ],
   imports: [
     BrowserModule,
