@@ -14,8 +14,8 @@
     "run": "node app.js"
   },
   "engines": {
-    "node": "6.11.1",
-    "npm": "3.10.9"
+    "node": "9.5.0",
+    "npm": "5.8.0"
   },
   "dependencies": {
     "@angular/cli" : "1.7.4",
