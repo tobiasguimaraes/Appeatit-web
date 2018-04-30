@@ -10,6 +10,8 @@ export class CardapioComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+        let navbar = document.getElementsByTagName('app-navbar')[0].children[0];
+        navbar.classList.add('navbar-hidden');
   }
 
 }
