@@ -1,0 +1,39 @@
+<div class="wrapper" *ngIf="receita != null">
+    <div class="section-dark" style="background-color: #f5f5f5">
+        <div class="content-center">
+            <div class="container row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-6">
+                    <ngb-carousel>
+                            <ng-template ngbSlide *ngFor="let f of receita.fotos; let i = index">
+                                <img [src]="f" alt="Random first slide">
+                            </ng-template>
+                        </ngb-carousel>
+                </div>
+            </div>            
+            <div class="container row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-6">
+                    <h2>{{receita.nome}}</h2>
+                    <br />
+                    <p>{{receita.descricao}}</p>
+                    <br />
+                    <h6>Sobre o chefe</h6>
+                    <p>{{receita.chefe.nome}}</p>
+                    <p>{{receita.chefe.descricao}}</p>
+                    <p><span class="font-weight-bold">Região: </span>{{receita.chefe.endereco.cidade}} - {{receita.chefe.endereco.bairro}}</p>
+                    <br />
+                </div>
+            </div>
+            <div class="section section-dark">
+                <div class="container text-center">
+                    <a routerLink='/confirmar/{{idReceita}}'>
+                        <button class="btn btn-danger btn-round">Confirme sua reserva!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
