@@ -34,6 +34,8 @@
           <h5 class="card-title">{{ r.nome }}</h5>
           <p class="card-text">{{ r.descricao }}.</p>
           <p class="card-text">Localização: {{r.chefe.endereco.cidade}}</p>
+          <p class="card-text">Horário: 20h</p>
+
           <a routerLink="{{ r._id }}"  class="btn btn-primary">Reservar!</a>
         </div>
         <div class="col-md-1">
