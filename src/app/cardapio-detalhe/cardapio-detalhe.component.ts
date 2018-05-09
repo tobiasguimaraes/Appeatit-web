@@ -13,7 +13,7 @@ import { ReservasService } from '../services/reservas/reservas.service';
 export class CardapioDetalheComponent implements OnInit {
 
   private idReceita: string
-  private receita: Receita;
+  public receita: Receita;
   constructor(private route: ActivatedRoute, private receitaService: ReceitasService) { }
 
   ngOnInit() {

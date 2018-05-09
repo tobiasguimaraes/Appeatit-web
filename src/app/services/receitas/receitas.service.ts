@@ -9,8 +9,8 @@ import 'rxjs/add/operator/map'
 @Injectable()
 export class ReceitasService {
 
-  // private url = 'http://localhost:3000';
-  private url = 'https://appeatit-server.herokuapp.com';
+  private url = 'http://localhost:3000';
+  // private url = 'https://appeatit-server.herokuapp.com';
 
   constructor(private http: Http) { }
 
