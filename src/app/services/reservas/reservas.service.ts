@@ -4,8 +4,8 @@ import { Http } from '@angular/http';
 @Injectable()
 export class ReservasService {
 
-  private url = 'http://localhost:3000';
-  // private url = 'https://appeatit-server.herokuapp.com';
+  // private url = 'http://localhost:3000';
+  private url = 'https://appeatit-server.herokuapp.com';
 
   constructor(private http: Http) { }
 
